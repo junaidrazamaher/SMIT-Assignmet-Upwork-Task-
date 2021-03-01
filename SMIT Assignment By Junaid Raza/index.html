@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- <link rel="stylsheet" href="style.css"> -->
+<style>
+    .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+/* @media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+} */
+/* .social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+} */
+
+.header{
+
+    height: 100px;
+    background-color: white;
+}
+
+.header1{
+
+    height: 30px;
+    background-color: lightcyan;
+    border: 1px solid lightcyan;
+}
+.header1 a{
+    text-decoration: none;
+    color: black;
+    /* padding-left: 20px; */
+    /* padding-bottom:10px; */
+
+    padding:25px;
+    
+
+}
+
+/* .low{
+
+    height:400px;
+    background-color: white;
+} */
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #red;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: white;}
+
+
+#parent {
+  display: flex;
+  justify-content: space-around;
+height:400px;
+background-color: white;
+
+
+
+}
+
+#left {
+  /* border: 1px solid lightgray; */
+  background-color:white;
+  /* width: 620px; */
+  /* height: 500px; */
+  
+}
+
+#right {
+  /* border: 1px solid lightgray; */
+  background-color:white;
+  /* width: 620px; */
+  /* height: 500px; */
+  /* margin-right: 10px; */
+}
+
+
+#parent4 {
+  display: flex;
+  justify-content: space-around;
+height:800px;
+background-color: white;
+
+
+
+}
+
+#hello {
+  /* border: 1px solid lightgray; */
+  background-color:white;
+  /* width: 620px; */
+  /* height: 500px; */
+  
+}
+
+#hi {
+  /* border: 1px solid lightgray; */
+  background-color:white;
+  /* width: 620px; */
+  /* height: 500px; */
+  /* margin-right: 10px; */
+}
+
+/* .fot a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+} */
+#parent1 {
+  display: flex;
+  justify-content: space-around;
+height:500px;
+background-color: white;
+
+
+
+}
+
+#left1 {
+  /* border: 1px solid lightgray; */
+  background-color:white;
+  /* width: 620px; */
+  /* height: 500px; */
+  
+}
+#right {
+  /* border: 1px solid lightgray; */
+  background-color:white;
+  /* width: 620px; */
+  /* height: 500px; */
+  /* margin-right: 10px; */
+}
+#parent2 {
+  display: flex;
+  justify-content: space-around;
+height:1000px;
+background-color: white;
+
+
+
+}
+
+#left2 {
+  /* border: 1px solid lightgray; */
+  background-color:white;
+  /* width: 620px; */
+  /* height: 500px; */
+  
+}
+#right2 {
+  /* border: 1px solid lightgray; */
+  background-color:white;
+  /* width: 620px; */
+  /* height: 500px; */
+  
+}
+
+#parent3 {
+  display: flex;
+  justify-content: space-around;
+height:400px;
+background-color: white;
+
+
+
+}
+/* #bfooter{
+
+  width:1200px;
+  height:300px;
+  background-color: #66145f;
+  margin: 35px;
+  border: 1px solid;
+  border-radius: 10px; */
+/* } */
+
+#first {
+  /* border: 1px solid lightgray; */
+  background-color:white;
+  /* width: 620px; */
+  /* height: 500px; */
+}
+#second {
+  /* border: 1px solid lightgray; */
+  background-color:white;
+  /* padding-right: 100px; */
+  /* width: 620px; */
+  /* height: 500px; */
+}
+#third {
+  /* border: 1px solid lightgray; */
+  background-color:white;
+  /* width: 620px; */
+  /* height: 500px; */
+}
+/* #footer{
+
+  height: 50px;
+  background-color: #7a1f73;
+  padding:10px;
+}
+   */
+
+
+ 
+
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <form action="#">
+  <input type="image" style="margin-left: 50px; margin-bottom: 10px;" align="left" src="upwork.png" height="50px" width="100px"> 
+</form>
+
+<div class="dropdown">
+    <button class="dropbtn">Find Talent</button>
+    <div class="dropdown-content">
+      <a href="#">IT and Development</a>
+      <a href="#">Design and creative</a>
+      <a href="#">Social media marketing</a>
+      <a href="#">Writing and Translation</a>
+      <a href="#">Admin and support</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Find Work</button>
+    <div class="dropdown-content">
+      <a href="#">Admin and customer support</a>
+      <a href="#">Sales and Marketing</a>
+      <a href="#">See all jobs</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Why Upwork</button>
+    <div class="dropdown-content">
+      <a href="#">Success Stories</a>
+      <a href="#">Reviews</a>
+      <a href="#">Learn</a>
+      <a href="#">Forums</a>
+    </div>
+  </div>
+
+
+  
+    <input style="margin-left: 120px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 35px;
+    width: 250px;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color:white;" type="text" placeholder="Search" name="search">
+    
+  <a style="text-decoration: none; color: black; margin-left: 30px;"href="#">Log In</a>
+  <button style="margin-left: 20px; border:1px solid red; border-radius: 5px; height: 30px; width:80px; color:white; background-color: red; font-weight:bolder;">Sign Up</button>
+</div>
+
+    <div class="header1">
+
+    <a href="#">Development and IT</a>
+    <a href="">Design and creative</a>
+    <a href="">Sales and Marketing</a>
+    <a href="">Writing and Translation</a>
+    <a href="">Admin and customer Support</a>
+    <a href="">Finance and Accounting</a>
+
+
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div id="parent">
+        <div id="left">
+
+                <h1 style="margin-left: 70px; font-weight: bolder; font-size:50px ;">
+                  Let’s build 
+                  <br />  something. Let’s
+                  <br /> build relationship
+                </h1>
+                
+              <p style="margin-left: 70px;">With 8,000 jobs posted daily, the possibilities are endless.</p>
+              
+              <button style="margin-left: 20px; border:1px solid red; border-radius: 5px; height: 40px; width:170px; color:white; background-color: red; font-weight:bolder; margin-left: 70px;"> Create a Profile</button>
+
+        </div>
+        <div id="right">
+            <img src="new.png" align="right" width="400px" height="300px">
+            <!-- <center>
+        
+                <a href="#">Find Jobs</a>
+                <a href="#">Build a Career</a>
+                <a href="#">Our process</a>    
+                <a href="#">Get paid</a>
+        
+            </center> -->
+        </div>
+
+           
+        
+        
+
+    </div>
+
+
+    <!-- <div class="low">
+
+  <h1 style="margin-left: 70px; font-weight: bolder; font-size:50px ;">
+    Let’s build 
+    <br />  something. Let’s
+    <br /> build relationship
+  </h1>
+  
+<p style="margin-left: 70px;">With 8,000 jobs posted daily, the possibilities are endless.</p>
+
+<button style="margin-left: 20px; border:1px solid red; border-radius: 5px; height: 40px; width:170px; color:white; background-color: red; font-weight:bolder; margin-left: 70px;"> Create a Profile</button> -->
+
+
+
+<!-- <img src="new.png" align="right" width="400px" height="300px"> -->
+
+
+<div class="fot">
+
+    <center>
+
+        <a href="#">Find Jobs</a>
+        <a href="#">Build a Career</a>
+        <a href="#">Our process</a>    
+        <a href="#">Get paid</a>
+        <hr />
+
+    </center>
+</div>
+
+<br />
+<br />
+<br />
+<div id="parent1">
+<div id="left1">
+
+  <h2 style="color: #e66c47;">Find Jobs</h2> 
+  
+  <h1 style="">Strong connections are our <br />
+    heart and soul.</h1>  
+    <p style="font-size: larger;">How does Upwork work for freelancers? It’s a great place to
+      <br /> connect with like-minded clients, forge powerful relationships, 
+      <br />and grow your own business or career, project by project.</p>
+
+      <img src="larki.png" width="400px">
+
+</div>
+
+<div id="right1">
+
+<h2>Freedom to work on ideal projects</h2>
+<p style="font-size: larger;">On Upwork, you run your own business and choose <br />
+  your own clients and projects. Just complete your profile <br />
+   and we’ll highlight ideal jobs.</p>
+   <br />
+   <h2>Wide variety and high pay</h2>
+   <p style="font-size: larger;">Clients are now posting jobs in hundreds of skill
+     <br /> categories, paying the right price for great work. You <br />
+     do that thing you do, and we’ll do the rest.</p>
+<br />
+     <h2>More and more success</h2>
+     <p style="font-size: larger;">Gain recognition for your great work through reviews
+      <br /> and your Job Success Score. Every step forward leads <br /> to new career-building opportunities.
+
+    </p>
+
+    <br />
+    <br />
+    
+</div>
+
+
+</div>
+<br />
+<br />
+
+<hr />
+
+<br />
+<br />
+<br /> 
+<br /> 
+<hr />
+
+<div id="parent2">
+
+  <div id="left2">
+
+    <h3 style="color: #64d8de;">Build a career</h3>
+    <h1>From small beginnings
+      <br /> come great things.</h1>
+      <p style="font-size: larger;">Upwork makes it easy to connect with clients and begin doing 
+        <br /> great work. The relationships you make are your connection <br />
+        future work. And qualified talent gets invited to private
+        <br /> jobs not available publicly.</p>
+        <img src="bandy.png">
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br><br><br><br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nrw008L05bg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+
+  <div id="right2">
+
+    <h2>Streamlined hiring
+    </h2>
+    <p style="font-size: larger;">Upwork’s sophisticated algorithms highlight projects
+      <br /> you’re a great fit for.
+
+    </p>
+    <br />
+    <h2>Top Rated and Rising Talent programs
+    </h2>
+    <p>The more projects you complete, the more we
+      <br /> recognize you with added visibility. <a style="text-decoration: none; color: red;" href="#">Explore badges
+        <br /> here.</a>
+
+    </p>
+    <br />
+
+    <h2>Do substantial work with top clients
+    </h2>
+    <p style="font-size: larger;">Upwork Skill Certifications are available in key areas,
+      <br /> helping you stand out.
+
+    </p>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br />
+    <br />
+
+    <h2 style="color:#eb634b
+
+    ;">Our Process
+
+    </h2>
+    <h1 style="font-size: 35px;">Think big. No, bigger.
+    </h1>
+<p style="font-size: larger;">We've seen people just like you build careers beyond their
+  <br /> expectations. All you need is an internet connection, a skill,
+  <br /> and dedication.
+
+</p>
+<button style="border:1px solid red; border-radius: 5px; height: 40px; width:190px; color:white; background-color: red; font-weight:bolder; margin-left: 70px;">Get Started Now</button>
+
+  </div>
+</div>
+
+<hr />  
+
+<div id="parent3">
+<div id="first">
+  <h1 style="font-size: 30px;">1<span style="color: red;">.</span></h1>
+  <h2>Get your free account
+  </h2>
+  <p style="font-size: larger;">If you haven't signed up yet, now's the
+    <br /> time. We can't wait to see what you
+    <br /> can do here.
+
+  </p>
+
+</div>
+<div id="second">
+
+  <h1 style="font-size: 30px;">2<span style="color: #e0e84d;">.</span></h1>
+  <h2>Create a profile
+
+  </h2>
+  <p style="font-size: larger;">Highlight your skills, your experience, and 
+    <br />portfolio, and indicate your desired hourly
+    <br /> pay rate.
+
+  </p>
+
+</div>
+<div id="third">
+  <h1 style="font-size: 30px;">3<span style="color: #919624;">.</span></h1>
+  <h2>Set up your payment option
+
+
+  </h2>
+  <p style="font-size: larger;">Tell us how you want to receive your
+    <br /> earnings so that you can be paid easily.
+
+
+
+  </p>
+
+
+</div>
+
+</div>
+
+<div id="parent4">
+  <div id="hello">
+    <h3 style="color: #50b4bf;">Get Paid</h3>
+    <h1 style="font-size: 40px;">Simplify your process.
+      <br /> Multiply your profits.
+    </h1>
+    <p style="font-size: larger;">All projects include Upwork Payment Protection—
+      <br />helping ensure that you get paid for all successfully
+      <br /> completed work by you and your team.
+      
+
+    </p>
+    <br />
+
+    <img src="larki1.png">
+
+
+  </div>
+
+  <div id="hi">
+<h3>Get paid through Upwork.
+</h3>
+<p style="font-size: larger;">All invoicing and payments happen through 
+  Upwork <br /> for a simple and streamlined process.
+
+</p>
+<br />
+
+<h3>Hourly and fixed-price projects.
+</h3>
+<p style="font-size: larger;">For hourly work, submit weekly invoices. For fixed- <br />
+  price projects, set milestones and funds are released
+  <br /> via Upwork Escrow features.
+
+</p>
+<br />
+<h3>Multiple payment options.
+</h3>
+<p style="font-size: larger;">Choose a payment method that works best for you,<br />
+   from direct deposit or PayPal to wire transfer and 
+   <br />more.
+
+</p>
+  </div>
+
+</div>
+<hr />
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Scanfcode</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+</body>
+
+</html>
+
